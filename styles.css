@@ -1,4 +1,4 @@
-/* =====  CSS by Christina Carrasquilla =====  */
+/* =====  CSS by Christina Carrasquilla, updated by Cooper Hill =====  */
 
 /* ===== Color Palette 
 
@@ -61,6 +61,19 @@ nav a:hover {
 
 main {
     padding: 1rem;
+}
+main a {
+    background-color: #D9A441;
+    color: #2F2F2F;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: inline-block;
+    text-transform:uppercase;
+}
+
+main a:hover {
+    color:white
+    background-color: #B35A3C;
 }
 
 section {
