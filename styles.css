@@ -18,6 +18,8 @@ body {
     margin: 0;
     background-color: #F7F4EF;
     color: #2F2F2F;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 header {
@@ -42,9 +44,6 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
 }
 
 nav a {
@@ -62,6 +61,7 @@ nav a:hover {
 main {
     padding: 1rem;
 }
+
 main a {
     background-color: #D9A441;
     color: #2F2F2F;
@@ -72,7 +72,7 @@ main a {
 }
 
 main a:hover {
-    color:white
+    color:white;
     background-color: #B35A3C;
 }
 
@@ -80,16 +80,10 @@ section {
     margin-bottom: 2rem;
 }
 
-.card-row {
-    display: flex;
-    gap: 1rem;
-}
-
 .card-row section {
     background-color: white;
     border: 1px solid #E5E5E5;
     padding: 1rem;
-    width: 30%;
 }
 
 img {
@@ -109,4 +103,21 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
+
+}/* Media Queries (Medium =====*/
+@media screen and (min-width: 1424) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+}
+.card-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.card-row section {
+    width: 30%;
+}
 }
